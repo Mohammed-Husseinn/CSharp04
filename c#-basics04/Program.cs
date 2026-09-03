@@ -1,18 +1,18 @@
 ﻿
-// 7st answer 
+// 8st answer 
 using System;
 
 class Program
 {
     static void Main()
     {
-        int pages = 400;
-        AddBonusPagesByRef(ref pages);
-        Console.WriteLine(pages); // 450
+        double[] prices = { 25.5, 40.0 };
+        ReplaceArray(ref prices);
+        Console.WriteLine(prices.Length);
     }
 
-    static void AddBonusPagesByRef(ref int pages)
+    static void ReplaceArray(ref double[] prices)
     {
-        pages += 50;
+        prices = new double[] { 10.0, 12.5, 15.0 };
     }
 }
