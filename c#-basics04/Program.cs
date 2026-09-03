@@ -1,26 +1,17 @@
 ﻿
-// 9st answer 
+// 10st answer 
 using System;
 
 class Program
 {
     static void Main()
     {
-        if (TryGetPrice("Clean Code", out double price))
-        {
-            Console.WriteLine(price); 
-        }
+        PrintBookInfo("The Pragmatic Programmer");
+        PrintBookInfo("Clean Code", 464);
     }
 
-    static bool TryGetPrice(string title, out double price)
+    static void PrintBookInfo(string title, int pages = 300)
     {
-        if (title == "Clean Code")
-        {
-            price = 25.5;
-            return true;
-        }
-
-        price = 0;
-        return false;
+        Console.WriteLine($"Book: {title}, Pages: {pages}");
     }
 }
