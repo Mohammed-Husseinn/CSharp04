@@ -1,16 +1,19 @@
 ﻿
-// 11st answer 
+// 12st answer 
 using System;
 
 class Program
 {
     static void Main()
     {
-        PrintBookInfo(pages: 352, title: "Domain-Driven Design");
+        PrintAllTitles("Clean Code", "The Pragmatic Programmer", "Refactoring");
     }
 
-    static void PrintBookInfo(string title, int pages = 300)
+    static void PrintAllTitles(params string[] titles)
     {
-        Console.WriteLine($"Book: {title}, Pages: {pages}");
+        foreach (string title in titles)
+        {
+            Console.WriteLine(title);
+        }
     }
 }
