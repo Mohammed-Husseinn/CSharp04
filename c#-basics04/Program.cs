@@ -1,20 +1,18 @@
 ﻿
-// 4st answer 
+// 5st answer 
 using System;
 
 class Program
 {
     static void Main()
     {
-        Console.WriteLine("Hello, World!");
-
-      
-        Console.Write("4. ");
-        PrintBookTitle("Clean Code");
+        int pages = 400;
+        AddBonusPages(pages);
+        Console.WriteLine(pages); // 400
     }
 
-    static void PrintBookTitle(string title)
+    static void AddBonusPages(int pages)
     {
-        Console.WriteLine(title);
+        pages += 50;
     }
 }
