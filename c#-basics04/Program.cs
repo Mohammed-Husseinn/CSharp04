@@ -1,10 +1,20 @@
-﻿Console.WriteLine("Hello, World!");
+﻿
+// 4st answer 
+using System;
 
-// 3st answer 
-Console.Write("3. ");
-PrintWelcomeMessage();
-
-static void PrintWelcomeMessage()
+class Program
 {
-    Console.WriteLine("Welcome!");
+    static void Main()
+    {
+        Console.WriteLine("Hello, World!");
+
+      
+        Console.Write("4. ");
+        PrintBookTitle("Clean Code");
+    }
+
+    static void PrintBookTitle(string title)
+    {
+        Console.WriteLine(title);
+    }
 }
