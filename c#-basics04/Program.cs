@@ -1,18 +1,18 @@
 ﻿
-// 5st answer 
+// 6st answer 
 using System;
 
 class Program
 {
     static void Main()
     {
-        int pages = 400;
-        AddBonusPages(pages);
-        Console.WriteLine(pages); // 400
+        double[] prices = { 25.5, 40.0 };
+        ApplyDiscount(prices);
+        Console.WriteLine(prices[0]); // 20.5
     }
 
-    static void AddBonusPages(int pages)
+    static void ApplyDiscount(double[] prices)
     {
-        pages += 50;
+        prices[0] -= 5;
     }
 }
