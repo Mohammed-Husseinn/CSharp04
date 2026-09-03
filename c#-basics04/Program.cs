@@ -1,13 +1,12 @@
 ﻿
-// 10st answer 
+// 11st answer 
 using System;
 
 class Program
 {
     static void Main()
     {
-        PrintBookInfo("The Pragmatic Programmer");
-        PrintBookInfo("Clean Code", 464);
+        PrintBookInfo(pages: 352, title: "Domain-Driven Design");
     }
 
     static void PrintBookInfo(string title, int pages = 300)
