@@ -1,5 +1,9 @@
 ﻿Console.WriteLine("Hello, World!");
 
-// 1st answer 
-double[] prices = { 25.5, 40.0, 33.75 };
-Console.WriteLine($"1. Second price: {prices[1]}");
+// 2st answer 
+int[,] shelfCopies =
+       {
+            { 3, 5 },
+            { 1, 4 }
+        };
+Console.WriteLine($"2. Shelf 1, slot 0 copies: {shelfCopies[1, 0]}");
